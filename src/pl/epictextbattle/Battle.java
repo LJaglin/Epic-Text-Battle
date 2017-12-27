@@ -2,7 +2,7 @@ package pl.epictextbattle;
 
 public class Battle {
 	
-	//method below starts fight between two warriors
+	//method is responsible for starting fight between two warriors and check the result of the fight
 	public static void startFight(Warrior warrior1, Warrior warrior2) {
 		while(true) {
 			if(getAttackResult(warrior1, warrior2) == "Game Over") {
