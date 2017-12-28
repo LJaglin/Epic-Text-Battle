@@ -26,14 +26,15 @@ public class Battle {
 		if(damage2warriorB > 0) {
 			warriorBhealth = warriorBhealth - damage2warriorB;
 			warriorB.setHealth(warriorBhealth);
-			System.out.format("%s attacks %s and deals %s damage", warriorA.getName(), warriorB.getName(), damage2warriorB);
+			System.out.format("%s attacks %s and deals %s damage \n", warriorA.getName(), warriorB.getName(), damage2warriorB);
+			System.out.format("%s has %s health \n", warriorB.getName(), warriorB.getHealth());
 		} else {
 			damage2warriorB = 0;
-			System.out.format("%s blocks attack from %s", warriorB.getName(), warriorA.getName());
+			System.out.format("%s blocks attack from %s \n", warriorB.getName(), warriorA.getName());
 		}
 		
 		if(warriorBhealth <= 0) {
-			System.out.format("%s has died and %s won", warriorB.getName(), warriorA.getName());
+			System.out.format("%s has died and %s won \n", warriorB.getName(), warriorA.getName());
 			return "Game Over";
 		} else {
 			return "Fight Again";
