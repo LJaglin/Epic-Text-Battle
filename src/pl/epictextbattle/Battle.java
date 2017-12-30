@@ -28,6 +28,7 @@ public class Battle {
 			warriorB.setHealth(warriorBhealth);
 			System.out.format("%s attacks %s and deals %s damage \n", warriorA.getName(), warriorB.getName(), damage2warriorB);
 			System.out.format("%s has %s health \n", warriorB.getName(), warriorB.getHealth());
+			
 		} else {
 			damage2warriorB = 0;
 			System.out.format("%s blocks attack from %s \n", warriorB.getName(), warriorA.getName());
@@ -35,10 +36,10 @@ public class Battle {
 		
 		if(warriorBhealth <= 0) {
 			System.out.format("%s has died and %s won \n", warriorB.getName(), warriorA.getName());
+			
 			return "Game Over";
 		} else {
 			return "Fight Again";
 		}
 	}
-	
 }

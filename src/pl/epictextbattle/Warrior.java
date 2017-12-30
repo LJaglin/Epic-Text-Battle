@@ -30,6 +30,10 @@ public class Warrior {
 		this.health = health;
 	}
 	
+	public int getAttackMax() {
+		return attackMax;
+	}
+	
 	//method below generates random value of attack, value cannot be higher than attackMax
 	public int attack() {
 		return random.nextInt(attackMax);
